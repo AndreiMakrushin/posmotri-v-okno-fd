@@ -65,7 +65,6 @@ ol {
   flex-direction: column;
   gap: 16px;
   width: 771px;
-  font-family: "Fira Sans Condensed", sans-serif;
 }
 .search-form {
   display: flex;
