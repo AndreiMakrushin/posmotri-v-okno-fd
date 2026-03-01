@@ -95,21 +95,29 @@ ol {
   object-fit: cover;
 }
 .content__list {
+  padding-top: 1px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
+.content__list-item {
+  max-width: 390px;
+  margin-left: 1px;
+}
 .content__video-card {
   display: flex;
   align-items: flex-start;
-  max-width: 390px;
-  border: none;
-  outline: none;
 }
-.content__video-card:has(.content__card-link:focus-visible) {
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+.content__list-item:has(.content__card-link_current) {
+  background-color: #545050;
+}
+.content__list-item:has(.content__card-link:focus-visible) {
+  border: none;
   outline: 1px solid currentColor;
-  border-radius: 0;
 }
 .content__video-card:active {
   background-color: #545050;
@@ -150,10 +158,6 @@ ol {
 }
 .content__accent {
   color: #545050;
-}
-.content__card-link {
-  text-decoration: none;
-  color: #fff;
 }
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
