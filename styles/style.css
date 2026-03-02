@@ -187,6 +187,7 @@ ol {
   position: relative;
 }
 .content__list {
+  padding-top: 2px;
   display: flex;
   flex-direction: column;
   gap: 30px;
