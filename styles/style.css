@@ -125,7 +125,6 @@ ol {
 .search-form__textfield:focus {
   outline: none;
 }
-
 .search-form__label:has(:focus-visible) {
   outline: 1px solid currentColor;
   outline-offset: 1px;
@@ -152,10 +151,6 @@ ol {
 }
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
-}
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid currentColor;
-  outline-offset: 1px;
 }
 .search-form__submit-button {
   width: 194px;
