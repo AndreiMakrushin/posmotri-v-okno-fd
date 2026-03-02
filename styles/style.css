@@ -70,7 +70,7 @@ ol {
 }
 .content__list-container {
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -111,12 +111,13 @@ ol {
 .content__card-link {
   text-decoration: none;
   color: #fff;
+  border: none;
+  outline: none;
 }
 .content__list-item:has(.content__card-link_current) {
   background-color: #545050;
 }
 .content__list-item:has(.content__card-link:focus-visible) {
-  border: none;
   outline: 1px solid currentColor;
 }
 .content__video-card:active {
